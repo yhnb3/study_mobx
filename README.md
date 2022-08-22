@@ -1,46 +1,18 @@
-# Getting Started with Create React App
+## Mobx
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### 동작 원리
 
-## Available Scripts
+- observable할 state를 지정하고
+- state의 메소드를 통해 action을 보내면
+- state가 변경되고
+- observer 되고 있는 컴포넌트가 state의 변경에 따라 리렌더링 된다.
 
-In the project directory, you can run:
+### 내가 느끼기에 장점.
 
-### `npm start`
+- 일단 리렌더링이 되어야 할 컴포넌트에 observer를 감싸주어야 하기 때문에 자연스레 작은 단위 개발을 하게 되었던 것 같다.
+- redux보다 간단하게 환경을 마련할 수 있었다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 내가 느낀 단점.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- 아무래도 observer를 일일히 감싸주어야 하는 귀찮음이 존재한다.
+- recoil보다 덜 직관 적이다. 내가 느꼈을때는 recoil만큼 직관 적인 상태관리앱은 없다.
